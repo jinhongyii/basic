@@ -1,7 +1,7 @@
 # Makefile for StanfordCPPLib
 #****************************************************************
 
-SHELL = powershell.exe
+
 
 OBJECTS = \
     error.o \

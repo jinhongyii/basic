@@ -8,13 +8,25 @@
 #include "exp.h"
 #include "parser.h"
 #include "program.h"
-#include "../StanfordCPPLib/error.h"
-#include "../StanfordCPPLib/tokenscanner.h"
-#include "../StanfordCPPLib/simpio.h"
-#include "../StanfordCPPLib/strlib.h"
+#include "error.h"
+#include "tokenscanner.h"
+#include "simpio.h"
+#include "strlib.h"
 #include "statement.h"
-
 using namespace std;
+string keywords[] = {"LET", "IF", "INPUT", "PRINT", "END", "REM", "GOTO", "THEN", "RUN", "LIST", "CLEAR", "QUIT",
+                     "HELP"};
+
+bool find(string a) {
+    for (auto i:keywords) {
+        if (a == i) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
 void processLine(string line, Program & program, EvalState & state);
 int main(){
     EvalState state;

@@ -229,23 +229,20 @@ void processLine(string line, Program &program, EvalState &state) {
             if (scanner.hasMoreTokens()) {
                 error("SYNTAX ERROR");
             }
-            TokenScanner scanner1;
-            string temp;
-            Expression *exp3;
-            scanner1.ignoreWhitespace();
-            scanner1.scanNumbers();
-            while(true) {
-                cout<<" ? ";
-                getline(cin, temp);
-                scanner1.setInput(temp);
-                 exp3= readE(scanner1);
-                if(exp3->getType()==CONSTANT and !scanner1.hasMoreTokens()) {
-                    break;
-                } else {
+            bool correct=false;
+            do {
+                try {
+                    string temp;
+                    cout<<" ? ";
+                    cin >> temp;
+                    int num = stringToInteger(temp);
+                    state.setValue(exp2->toString(), num);
+                    correct=true;
+                } catch (...) {
                     cout<<"INVALID NUMBER"<<endl;
                 }
-            }
-            state.setValue(exp2->toString(), exp3->eval(state));
+            } while (!correct);
+            cin.get();
             return;
         }
         error("SYNTAX ERROR");

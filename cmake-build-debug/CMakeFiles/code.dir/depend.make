@@ -89,11 +89,14 @@ CMakeFiles/code.dir/statement.cpp.obj: ../evalstate.h
 CMakeFiles/code.dir/statement.cpp.obj: ../exp.h
 CMakeFiles/code.dir/statement.cpp.obj: ../foreach.h
 CMakeFiles/code.dir/statement.cpp.obj: ../map.h
+CMakeFiles/code.dir/statement.cpp.obj: ../parser.h
+CMakeFiles/code.dir/statement.cpp.obj: ../private/tokenpatch.h
 CMakeFiles/code.dir/statement.cpp.obj: ../program.h
 CMakeFiles/code.dir/statement.cpp.obj: ../stack.h
 CMakeFiles/code.dir/statement.cpp.obj: ../statement.cpp
 CMakeFiles/code.dir/statement.cpp.obj: ../statement.h
 CMakeFiles/code.dir/statement.cpp.obj: ../strlib.h
+CMakeFiles/code.dir/statement.cpp.obj: ../tokenscanner.h
 CMakeFiles/code.dir/statement.cpp.obj: ../vector.h
 
 CMakeFiles/code.dir/strlib.cpp.obj: ../error.h

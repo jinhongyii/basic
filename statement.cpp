@@ -59,23 +59,20 @@ inputstmt::inputstmt(string var) : var(std::move(var)) {}
 
 void inputstmt::execute(EvalState &state) {
 
-    TokenScanner scanner1;
-    string temp;
-    Expression *exp3;
-    scanner1.ignoreWhitespace();
-    scanner1.scanNumbers();
-    while(true) {
-        cout<<" ? ";
-        getline(cin, temp);
-        scanner1.setInput(temp);
-        exp3= readE(scanner1);
-        if(exp3->getType()==CONSTANT and !scanner1.hasMoreTokens()) {
-            break;
-        } else {
+    bool correct=false;
+    do {
+        try {
+            string temp;
+            cout<<" ? ";
+            cin >> temp;
+            int num = stringToInteger(temp);
+            state.setValue(var, num);
+            correct=true;
+        } catch (...) {
             cout<<"INVALID NUMBER"<<endl;
         }
-    }
-    state.setValue(var, exp3->eval(state));
+    } while (!correct);
+    cin.get();
 }
 statementtype inputstmt::gettype() {
     return input;

@@ -60,7 +60,7 @@ inputstmt::inputstmt(string var) : var(std::move(var)) {}
 void inputstmt::execute(EvalState &state) {
     try {
         int temp;
-        cout<<"?"<<endl;
+        cout<<"?";
         cin >> temp;
         cin.get();
         state.setValue(var, temp);

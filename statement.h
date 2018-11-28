@@ -19,6 +19,7 @@ class Program;
 #include "calculate.h"
 #include "tokenscanner.h"
 #include "parser.h"
+#include "strlib.h"
 /*
  * Class: Statement
  * ----------------

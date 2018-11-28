@@ -64,7 +64,7 @@ void inputstmt::execute(EvalState &state) {
         try {
             string temp;
             cout<<" ? ";
-            cin >> temp;
+            getline(cin,temp);
             int num = stringToInteger(temp);
             state.setValue(var, num);
             correct=true;
@@ -72,7 +72,7 @@ void inputstmt::execute(EvalState &state) {
             cout<<"INVALID NUMBER"<<endl;
         }
     } while (!correct);
-    cin.get();
+    //cin.get();
 }
 statementtype inputstmt::gettype() {
     return input;

@@ -111,7 +111,7 @@ void processLine(string line, Program &program, EvalState &state) {
         } else if (exp->toString() == "INPUT") {
             Expression *exp2 = readE(scanner);
             if (scanner.hasMoreTokens() or find(exp2->toString()) or exp2->getType() != IDENTIFIER) {
-                error("SYNTAX ERROR");
+                error("INVALID NUMBER");
             }
 
             Statement *temp = new inputstmt(exp2->toString());
@@ -234,7 +234,7 @@ void processLine(string line, Program &program, EvalState &state) {
                 try {
                     string temp;
                     cout<<" ? ";
-                    cin >> temp;
+                    getline(cin,temp);
                     int num = stringToInteger(temp);
                     state.setValue(exp2->toString(), num);
                     correct=true;
@@ -242,7 +242,7 @@ void processLine(string line, Program &program, EvalState &state) {
                     cout<<"INVALID NUMBER"<<endl;
                 }
             } while (!correct);
-            cin.get();
+            //cin.get();
             return;
         }
         error("SYNTAX ERROR");

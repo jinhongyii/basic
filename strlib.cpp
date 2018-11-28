@@ -31,7 +31,7 @@ int stringToInteger(string str) {
    int value;
    stream >> value >> ws;
    if (stream.fail() || !stream.eof()) {
-      error("SYNTAX ERROR");
+      error("INVALID NUMBER");
    }
    return value;
 }

@@ -78,21 +78,22 @@ void Program::switchstmt(int lineno) {
 void Program::execute(EvalState &state) {
     current=(*(stmts.begin())).first;
     int temp=current;
-    for (auto i = stmts.begin(); i != stmts.end(); i++) {
+    for (auto i = stmts.begin(); i != stmts.end();) {
         (*i).second->execute(state);
         if ((*i).second->gettype() == ending) {
             break;
         }
         if ((*i).second->gettype() == Goto) {
             i=stmts.find(current);
-            i--;
+            continue;
         }
         if ((*i).second->gettype() == IF) {
             if(temp!=current) {
                 i = stmts.find(current);
-                i--;
+                continue;
             }
         }
+        i++;
     }
 }
 void Program::showlines() {

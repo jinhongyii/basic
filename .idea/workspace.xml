@@ -12,8 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="833e9a53-e9bf-4fc6-ba0c-c43ed1685f25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/program.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +39,8 @@
         <counts>
           <entry key="BASIC (disassembly)" value="1" />
           <entry key="COMMIT_EDITMSG" value="4" />
-          <entry key="cpp" value="65" />
-          <entry key="h" value="58" />
+          <entry key="cpp" value="73" />
+          <entry key="h" value="60" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -48,7 +48,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="2" />
           <entry key="Disassembly" value="1" />
-          <entry key="ObjectiveC" value="123" />
+          <entry key="ObjectiveC" value="133" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -58,14 +58,14 @@
           <entry key="cpp" value="4206" />
           <entry key="h" value="1392" />
           <entry key="mm" value="56" />
-          <entry key="txt" value="129" />
+          <entry key="txt" value="174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="114" />
           <entry key="ObjectiveC" value="5654" />
-          <entry key="PLAIN_TEXT" value="90" />
+          <entry key="PLAIN_TEXT" value="135" />
         </counts>
       </usages-collector>
     </session>
@@ -73,21 +73,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/program.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
-              <folding>
-                <element signature="e#195#212#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Basic.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="816">
               <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#258#275#0" expanded="true" />
@@ -99,17 +87,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpio.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="1071">
               <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statement.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="164">
+              <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#334#351#0" expanded="true" />
@@ -121,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exp.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="1292">
               <caret line="76" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="e#107#124#0" expanded="true" />
@@ -133,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evalstate.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
+            <state relative-caret-position="510">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#263#280#0" expanded="true" />
@@ -142,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/program.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="91" column="40" lean-forward="true" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+            <state relative-caret-position="1156">
+              <caret line="69" column="43" lean-forward="true" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -157,7 +145,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_tree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
+            <state relative-caret-position="2346">
               <caret line="150" selection-start-line="150" selection-end-line="150" />
             </state>
           </provider>
@@ -166,7 +154,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ext/aligned_buffer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="901">
               <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
@@ -175,7 +163,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calculate.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
+            <state relative-caret-position="612">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
@@ -192,7 +180,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="1de63a47211bc445e8d0c168b58fea2795ee2c60" />
       </map>
     </option>
     <option name="RESET_MODE" value="HARD" />
@@ -252,6 +240,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -275,20 +264,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BASIC">
-    <configuration name="BASIC" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BASIC" TARGET_NAME="BASIC" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BASIC" RUN_TARGET_NAME="BASIC">
+  <component name="RunManager" selected="Application.code">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration name="code" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BASIC" TARGET_NAME="code" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BASIC" RUN_TARGET_NAME="code">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.BASIC" />
+      <item itemvalue="Application.code" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -322,11 +311,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543396363631</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="FIX BUG switchstmt(the instantiation of current)">
+      <created>1543397478284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543397478284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31786000" />
+    <option name="totallyTimeSpent" value="32338000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,7 +335,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2700081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -347,15 +342,15 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40213522" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39679715" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39679715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32740214" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3291815" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4995958" visible="true" weight="0.3291815" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -409,7 +404,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="FIX BUG IF" />
     <MESSAGE value="FIX BUG IF list" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX BUG IF list" />
+    <MESSAGE value="FIX BUG switchstmt(the instantiation of current)" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX BUG switchstmt(the instantiation of current)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -618,26 +614,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpio.cpp">
+    <entry file="file://$PROJECT_DIR$/tokenscanner.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#107#124#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-6375" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Basic.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="816">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="e#258#275#0" expanded="true" />
@@ -645,9 +629,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simpio.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#107#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/evalstate.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
+        <state relative-caret-position="510">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#263#280#0" expanded="true" />
@@ -655,44 +656,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/program.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="69" column="43" lean-forward="true" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_tree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="2346">
           <caret line="150" selection-start-line="150" selection-end-line="150" />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ext/aligned_buffer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="901">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calculate.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="612">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statement.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="164">
+          <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#334#351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="91" column="40" lean-forward="true" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

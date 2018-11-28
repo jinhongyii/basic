@@ -64,39 +64,39 @@ CMAKE_SOURCE_DIR = C:\Users\jinho\CLionProjects\BASIC
 CMAKE_BINARY_DIR = C:\Users\jinho\CLionProjects\BASIC\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/BASIC.dir
+# Target rules for target CMakeFiles/code.dir
 
 # All Build rule for target.
-CMakeFiles/BASIC.dir/all:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/depend
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinho\CLionProjects\BASIC\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target BASIC"
-.PHONY : CMakeFiles/BASIC.dir/all
+CMakeFiles/code.dir/all:
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/depend
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinho\CLionProjects\BASIC\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target code"
+.PHONY : CMakeFiles/code.dir/all
 
 # Include target in all.
-all: CMakeFiles/BASIC.dir/all
+all: CMakeFiles/code.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/BASIC.dir/rule: cmake_check_build_system
+CMakeFiles/code.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinho\CLionProjects\BASIC\cmake-build-debug\CMakeFiles 12
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/BASIC.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/code.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinho\CLionProjects\BASIC\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/BASIC.dir/rule
+.PHONY : CMakeFiles/code.dir/rule
 
 # Convenience name for target.
-BASIC: CMakeFiles/BASIC.dir/rule
+code: CMakeFiles/code.dir/rule
 
-.PHONY : BASIC
-
-# clean rule for target.
-CMakeFiles/BASIC.dir/clean:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/clean
-.PHONY : CMakeFiles/BASIC.dir/clean
+.PHONY : code
 
 # clean rule for target.
-clean: CMakeFiles/BASIC.dir/clean
+CMakeFiles/code.dir/clean:
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/clean
+.PHONY : CMakeFiles/code.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/code.dir/clean
 
 .PHONY : clean
 

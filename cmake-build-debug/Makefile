@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = C:\Users\jinho\CLionProjects\BASIC\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\jinho\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.4129.51\bin\cmake\win\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	C:\Users\jinho\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.4129.51\bin\cmake\win\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BASIC
+# Target rules for targets named code
 
 # Build rule for target.
-BASIC: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 BASIC
-.PHONY : BASIC
+code: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 code
+.PHONY : code
 
 # fast build rule for target.
-BASIC/fast:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/build
-.PHONY : BASIC/fast
+code/fast:
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/build
+.PHONY : code/fast
 
 Basic.obj: Basic.cpp.obj
 
@@ -128,7 +128,7 @@ Basic.obj: Basic.cpp.obj
 
 # target to build an object file
 Basic.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/Basic.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/Basic.cpp.obj
 .PHONY : Basic.cpp.obj
 
 Basic.i: Basic.cpp.i
@@ -137,7 +137,7 @@ Basic.i: Basic.cpp.i
 
 # target to preprocess a source file
 Basic.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/Basic.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/Basic.cpp.i
 .PHONY : Basic.cpp.i
 
 Basic.s: Basic.cpp.s
@@ -146,7 +146,7 @@ Basic.s: Basic.cpp.s
 
 # target to generate assembly for a file
 Basic.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/Basic.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/Basic.cpp.s
 .PHONY : Basic.cpp.s
 
 calculate.obj: calculate.cpp.obj
@@ -155,7 +155,7 @@ calculate.obj: calculate.cpp.obj
 
 # target to build an object file
 calculate.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/calculate.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/calculate.cpp.obj
 .PHONY : calculate.cpp.obj
 
 calculate.i: calculate.cpp.i
@@ -164,7 +164,7 @@ calculate.i: calculate.cpp.i
 
 # target to preprocess a source file
 calculate.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/calculate.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/calculate.cpp.i
 .PHONY : calculate.cpp.i
 
 calculate.s: calculate.cpp.s
@@ -173,7 +173,7 @@ calculate.s: calculate.cpp.s
 
 # target to generate assembly for a file
 calculate.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/calculate.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/calculate.cpp.s
 .PHONY : calculate.cpp.s
 
 error.obj: error.cpp.obj
@@ -182,7 +182,7 @@ error.obj: error.cpp.obj
 
 # target to build an object file
 error.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/error.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/error.cpp.obj
 .PHONY : error.cpp.obj
 
 error.i: error.cpp.i
@@ -191,7 +191,7 @@ error.i: error.cpp.i
 
 # target to preprocess a source file
 error.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/error.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/error.cpp.i
 .PHONY : error.cpp.i
 
 error.s: error.cpp.s
@@ -200,7 +200,7 @@ error.s: error.cpp.s
 
 # target to generate assembly for a file
 error.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/error.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/error.cpp.s
 .PHONY : error.cpp.s
 
 evalstate.obj: evalstate.cpp.obj
@@ -209,7 +209,7 @@ evalstate.obj: evalstate.cpp.obj
 
 # target to build an object file
 evalstate.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/evalstate.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/evalstate.cpp.obj
 .PHONY : evalstate.cpp.obj
 
 evalstate.i: evalstate.cpp.i
@@ -218,7 +218,7 @@ evalstate.i: evalstate.cpp.i
 
 # target to preprocess a source file
 evalstate.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/evalstate.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/evalstate.cpp.i
 .PHONY : evalstate.cpp.i
 
 evalstate.s: evalstate.cpp.s
@@ -227,7 +227,7 @@ evalstate.s: evalstate.cpp.s
 
 # target to generate assembly for a file
 evalstate.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/evalstate.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/evalstate.cpp.s
 .PHONY : evalstate.cpp.s
 
 exp.obj: exp.cpp.obj
@@ -236,7 +236,7 @@ exp.obj: exp.cpp.obj
 
 # target to build an object file
 exp.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/exp.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/exp.cpp.obj
 .PHONY : exp.cpp.obj
 
 exp.i: exp.cpp.i
@@ -245,7 +245,7 @@ exp.i: exp.cpp.i
 
 # target to preprocess a source file
 exp.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/exp.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/exp.cpp.i
 .PHONY : exp.cpp.i
 
 exp.s: exp.cpp.s
@@ -254,7 +254,7 @@ exp.s: exp.cpp.s
 
 # target to generate assembly for a file
 exp.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/exp.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/exp.cpp.s
 .PHONY : exp.cpp.s
 
 parser.obj: parser.cpp.obj
@@ -263,7 +263,7 @@ parser.obj: parser.cpp.obj
 
 # target to build an object file
 parser.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/parser.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/parser.cpp.obj
 .PHONY : parser.cpp.obj
 
 parser.i: parser.cpp.i
@@ -272,7 +272,7 @@ parser.i: parser.cpp.i
 
 # target to preprocess a source file
 parser.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/parser.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/parser.cpp.i
 .PHONY : parser.cpp.i
 
 parser.s: parser.cpp.s
@@ -281,7 +281,7 @@ parser.s: parser.cpp.s
 
 # target to generate assembly for a file
 parser.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/parser.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/parser.cpp.s
 .PHONY : parser.cpp.s
 
 program.obj: program.cpp.obj
@@ -290,7 +290,7 @@ program.obj: program.cpp.obj
 
 # target to build an object file
 program.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/program.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/program.cpp.obj
 .PHONY : program.cpp.obj
 
 program.i: program.cpp.i
@@ -299,7 +299,7 @@ program.i: program.cpp.i
 
 # target to preprocess a source file
 program.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/program.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/program.cpp.i
 .PHONY : program.cpp.i
 
 program.s: program.cpp.s
@@ -308,7 +308,7 @@ program.s: program.cpp.s
 
 # target to generate assembly for a file
 program.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/program.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/program.cpp.s
 .PHONY : program.cpp.s
 
 simpio.obj: simpio.cpp.obj
@@ -317,7 +317,7 @@ simpio.obj: simpio.cpp.obj
 
 # target to build an object file
 simpio.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/simpio.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/simpio.cpp.obj
 .PHONY : simpio.cpp.obj
 
 simpio.i: simpio.cpp.i
@@ -326,7 +326,7 @@ simpio.i: simpio.cpp.i
 
 # target to preprocess a source file
 simpio.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/simpio.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/simpio.cpp.i
 .PHONY : simpio.cpp.i
 
 simpio.s: simpio.cpp.s
@@ -335,7 +335,7 @@ simpio.s: simpio.cpp.s
 
 # target to generate assembly for a file
 simpio.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/simpio.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/simpio.cpp.s
 .PHONY : simpio.cpp.s
 
 statement.obj: statement.cpp.obj
@@ -344,7 +344,7 @@ statement.obj: statement.cpp.obj
 
 # target to build an object file
 statement.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/statement.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/statement.cpp.obj
 .PHONY : statement.cpp.obj
 
 statement.i: statement.cpp.i
@@ -353,7 +353,7 @@ statement.i: statement.cpp.i
 
 # target to preprocess a source file
 statement.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/statement.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/statement.cpp.i
 .PHONY : statement.cpp.i
 
 statement.s: statement.cpp.s
@@ -362,7 +362,7 @@ statement.s: statement.cpp.s
 
 # target to generate assembly for a file
 statement.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/statement.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/statement.cpp.s
 .PHONY : statement.cpp.s
 
 strlib.obj: strlib.cpp.obj
@@ -371,7 +371,7 @@ strlib.obj: strlib.cpp.obj
 
 # target to build an object file
 strlib.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/strlib.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/strlib.cpp.obj
 .PHONY : strlib.cpp.obj
 
 strlib.i: strlib.cpp.i
@@ -380,7 +380,7 @@ strlib.i: strlib.cpp.i
 
 # target to preprocess a source file
 strlib.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/strlib.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/strlib.cpp.i
 .PHONY : strlib.cpp.i
 
 strlib.s: strlib.cpp.s
@@ -389,7 +389,7 @@ strlib.s: strlib.cpp.s
 
 # target to generate assembly for a file
 strlib.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/strlib.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/strlib.cpp.s
 .PHONY : strlib.cpp.s
 
 tokenscanner.obj: tokenscanner.cpp.obj
@@ -398,7 +398,7 @@ tokenscanner.obj: tokenscanner.cpp.obj
 
 # target to build an object file
 tokenscanner.cpp.obj:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/tokenscanner.cpp.obj
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/tokenscanner.cpp.obj
 .PHONY : tokenscanner.cpp.obj
 
 tokenscanner.i: tokenscanner.cpp.i
@@ -407,7 +407,7 @@ tokenscanner.i: tokenscanner.cpp.i
 
 # target to preprocess a source file
 tokenscanner.cpp.i:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/tokenscanner.cpp.i
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/tokenscanner.cpp.i
 .PHONY : tokenscanner.cpp.i
 
 tokenscanner.s: tokenscanner.cpp.s
@@ -416,7 +416,7 @@ tokenscanner.s: tokenscanner.cpp.s
 
 # target to generate assembly for a file
 tokenscanner.cpp.s:
-	$(MAKE) -f CMakeFiles\BASIC.dir\build.make CMakeFiles/BASIC.dir/tokenscanner.cpp.s
+	$(MAKE) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/tokenscanner.cpp.s
 .PHONY : tokenscanner.cpp.s
 
 # Help Target
@@ -425,9 +425,9 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... BASIC
+	@echo ... code
 	@echo ... edit_cache
+	@echo ... rebuild_cache
 	@echo ... Basic.obj
 	@echo ... Basic.i
 	@echo ... Basic.s

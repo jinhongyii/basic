@@ -61,6 +61,7 @@ void inputstmt::execute(EvalState &state) {
     try {
         int temp;
         cin >> temp;
+        cin.get();
         state.setValue(var, temp);
     } catch (...) {
         error("INVALID NUMBER");

@@ -60,13 +60,17 @@ CMakeFiles/BASIC.dir/parser.cpp.obj: ../vector.h
 CMakeFiles/BASIC.dir/program.cpp.obj: ../calculate.h
 CMakeFiles/BASIC.dir/program.cpp.obj: ../evalstate.h
 CMakeFiles/BASIC.dir/program.cpp.obj: ../exp.h
+CMakeFiles/BASIC.dir/program.cpp.obj: ../foreach.h
 CMakeFiles/BASIC.dir/program.cpp.obj: ../map.h
 CMakeFiles/BASIC.dir/program.cpp.obj: ../parser.h
+CMakeFiles/BASIC.dir/program.cpp.obj: ../private/tokenpatch.h
 CMakeFiles/BASIC.dir/program.cpp.obj: ../program.cpp
 CMakeFiles/BASIC.dir/program.cpp.obj: ../program.h
+CMakeFiles/BASIC.dir/program.cpp.obj: ../stack.h
 CMakeFiles/BASIC.dir/program.cpp.obj: ../statement.h
-CMakeFiles/BASIC.dir/program.cpp.obj: ../tokenpatch.h
+CMakeFiles/BASIC.dir/program.cpp.obj: ../strlib.h
 CMakeFiles/BASIC.dir/program.cpp.obj: ../tokenscanner.h
+CMakeFiles/BASIC.dir/program.cpp.obj: ../vector.h
 
 CMakeFiles/BASIC.dir/simpio.cpp.obj: ../simpio.cpp
 CMakeFiles/BASIC.dir/simpio.cpp.obj: ../simpio.h
@@ -74,10 +78,14 @@ CMakeFiles/BASIC.dir/simpio.cpp.obj: ../simpio.h
 CMakeFiles/BASIC.dir/statement.cpp.obj: ../calculate.h
 CMakeFiles/BASIC.dir/statement.cpp.obj: ../evalstate.h
 CMakeFiles/BASIC.dir/statement.cpp.obj: ../exp.h
+CMakeFiles/BASIC.dir/statement.cpp.obj: ../foreach.h
 CMakeFiles/BASIC.dir/statement.cpp.obj: ../map.h
 CMakeFiles/BASIC.dir/statement.cpp.obj: ../program.h
+CMakeFiles/BASIC.dir/statement.cpp.obj: ../stack.h
 CMakeFiles/BASIC.dir/statement.cpp.obj: ../statement.cpp
 CMakeFiles/BASIC.dir/statement.cpp.obj: ../statement.h
+CMakeFiles/BASIC.dir/statement.cpp.obj: ../strlib.h
+CMakeFiles/BASIC.dir/statement.cpp.obj: ../vector.h
 
 CMakeFiles/BASIC.dir/strlib.cpp.obj: ../error.h
 CMakeFiles/BASIC.dir/strlib.cpp.obj: ../strlib.cpp

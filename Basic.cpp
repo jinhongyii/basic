@@ -52,7 +52,7 @@ int main() {
             }
 
         } catch (ErrorException &ex) {
-            cerr << "Error: " << ex.getMessage() << endl;
+            cout << ex.getMessage() << endl;
         }
     }
     return 0;

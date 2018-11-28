@@ -149,8 +149,8 @@ void processLine(string line, Program &program, EvalState &state) {
             return;
         } else if (exp->toString() == "IF") {
             Expression *exp2 = readE(scanner);
-            auto i = ((CompoundExp *) exp2)->getLHS()->eval(state);
-            auto j = ((CompoundExp *) exp2)->getRHS()->eval(state);
+            //auto i = ((CompoundExp *) exp2)->getLHS()->eval(state);
+            //auto j = ((CompoundExp *) exp2)->getRHS()->eval(state);
             auto op = ((CompoundExp *) exp2)->getOp();
             Expression *exp3 = readE(scanner);
             if (op != ">" and op != "<" and op != "=" and exp3->toString() != "THEN") {

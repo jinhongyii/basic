@@ -26,7 +26,7 @@ class Program;
  * for each of the statement and command types required for the
  * BASIC interpreter.
  */
-enum statementtype {assignment,print,comment,input,ending,Goto,IF};
+enum statementtype {assignment,print,comment,input,ending,Goto,IF,empty};
 class Statement {
 
 public:
@@ -136,6 +136,12 @@ private:
     Program & program;
 public:
     IFstmt(Expression* condition,int gotoline,Program & program);
+    virtual void execute(EvalState & state);
+    virtual statementtype gettype();
+};
+class emptystmt:public Statement{
+public:
+    emptystmt();
     virtual void execute(EvalState & state);
     virtual statementtype gettype();
 };

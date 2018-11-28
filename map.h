@@ -847,7 +847,7 @@ template <typename KeyType, typename ValueType>
 std::istream & operator>>(std::istream & is, Map<KeyType,ValueType> & map) {
    char ch;
    is >> ch;
-   if (ch != '{') error("operator >>: Missing {");
+   if (ch != '{') error("SYNTAX ERROR");
    map.clear();
    is >> ch;
    if (ch != '}') {
@@ -856,14 +856,14 @@ std::istream & operator>>(std::istream & is, Map<KeyType,ValueType> & map) {
          KeyType key;
          readGenericValue(is, key);
          is >> ch;
-         if (ch != ':') error("operator >>: Missing colon after key");
+         if (ch != ':') error("SYNTAX ERROR");
          ValueType value;
          readGenericValue(is, value);
          map[key] = value;
          is >> ch;
          if (ch == '}') break;
          if (ch != ',') {
-            error(std::string("operator >>: Unexpected character ") + ch);
+            error("SYNTAX ERROR");
          }
       }
    }

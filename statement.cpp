@@ -97,3 +97,8 @@ void IFstmt::execute(EvalState &state) {
 statementtype IFstmt::gettype() {
     return IF;
 }
+emptystmt::emptystmt() {}
+void emptystmt::execute(EvalState &state) {}
+statementtype emptystmt::gettype() {
+    return empty;
+}

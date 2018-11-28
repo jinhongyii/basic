@@ -84,6 +84,10 @@ void processLine(string line, Program &program, EvalState &state) {
         lineno = value;
 
         delete exp;
+        if(!scanner.hasMoreTokens()) {
+            program.removeSourceLine(lineno);
+            return;
+        }
         exp = readE(scanner);
         if (exp->toString() == "LET") {
             Expression *exp2 = readE(scanner);

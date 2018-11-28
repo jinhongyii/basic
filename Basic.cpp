@@ -118,7 +118,7 @@ void processLine(string line, Program &program, EvalState &state) {
                 error("SYNTAX ERROR");
             }
 
-            Statement *temp = new printstmt(exp2->toString());
+            Statement *temp = new printstmt(exp2);
             program.setParsedStatement(lineno, temp);
             program.addSourceLine(value, line);
             return;

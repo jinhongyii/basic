@@ -58,15 +58,24 @@ statementtype commentstmt::gettype() {
 inputstmt::inputstmt(string var) : var(std::move(var)) {}
 
 void inputstmt::execute(EvalState &state) {
-    try {
-        int temp;
+
+    TokenScanner scanner1;
+    string temp;
+    Expression *exp3;
+    scanner1.ignoreWhitespace();
+    scanner1.scanNumbers();
+    while(true) {
         cout<<" ? ";
-        cin >> temp;
-        cin.get();
-        state.setValue(var, temp);
-    } catch (...) {
-        error("INVALID NUMBER");
+        getline(cin, temp);
+        scanner1.setInput(temp);
+        exp3= readE(scanner1);
+        if(exp3->getType()==CONSTANT and !scanner1.hasMoreTokens()) {
+            break;
+        } else {
+            cout<<"INVALID NUMBER"<<endl;
+        }
     }
+    state.setValue(var, exp3->eval(state));
 }
 statementtype inputstmt::gettype() {
     return input;

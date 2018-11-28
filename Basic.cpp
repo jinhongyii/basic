@@ -38,7 +38,8 @@ bool find(string a) {
 void processLine(string line, Program &program, EvalState &state);
 
 /* Main program */
-bool flag=false;
+bool flag = false;
+
 int main() {
     EvalState state;
     Program program;
@@ -52,7 +53,7 @@ int main() {
             }
 
         } catch (ErrorException &ex) {
-            cout <<ex.getMessage() << endl;
+            cout << ex.getMessage() << endl;
 
 
         }
@@ -86,7 +87,7 @@ void processLine(string line, Program &program, EvalState &state) {
         lineno = value;
 
         delete exp;
-        if(!scanner.hasMoreTokens()) {
+        if (!scanner.hasMoreTokens()) {
             program.removeSourceLine(lineno);
             return;
         }
@@ -109,7 +110,7 @@ void processLine(string line, Program &program, EvalState &state) {
             return;
         } else if (exp->toString() == "INPUT") {
             Expression *exp2 = readE(scanner);
-            if (scanner.hasMoreTokens() or find(exp2->toString()) or exp2->getType()!=IDENTIFIER) {
+            if (scanner.hasMoreTokens() or find(exp2->toString()) or exp2->getType() != IDENTIFIER) {
                 error("SYNTAX ERROR");
             }
 
@@ -119,7 +120,7 @@ void processLine(string line, Program &program, EvalState &state) {
             return;
         } else if (exp->toString() == "PRINT") {
             Expression *exp2 = readE(scanner);
-            if (scanner.hasMoreTokens() ) {
+            if (scanner.hasMoreTokens()) {
 
                 error("SYNTAX ERROR");
             }
@@ -144,7 +145,7 @@ void processLine(string line, Program &program, EvalState &state) {
             return;
         } else if (exp->toString() == "GOTO") {
             Expression *exp2 = readE(scanner);
-            if (scanner.hasMoreTokens() or exp2->getType()!=CONSTANT ) {
+            if (scanner.hasMoreTokens() or exp2->getType() != CONSTANT) {
 
                 error("SYNTAX ERROR");
             }
@@ -179,7 +180,7 @@ void processLine(string line, Program &program, EvalState &state) {
             }
             program.execute(state);
             return;
-        } else if(exp->toString()=="LIST") {
+        } else if (exp->toString() == "LIST") {
             if (scanner.hasMoreTokens()) {
                 error("SYNTAX ERROR");
             }
@@ -196,13 +197,13 @@ void processLine(string line, Program &program, EvalState &state) {
             if (scanner.hasMoreTokens()) {
                 error("SYNTAX ERROR");
             }
-            flag=true;
+            flag = true;
             return;
         } else if (exp->toString() == "HELP") {
             if (scanner.hasMoreTokens()) {
                 error("SYNTAX ERROR");
             }
-            cout<<"Yet another basic interpreter"<<endl;
+            cout << "Yet another basic interpreter" << endl;
             return;
         } else if (exp->toString() == "LET") {
             Expression *exp2 = readE(scanner);
@@ -214,30 +215,37 @@ void processLine(string line, Program &program, EvalState &state) {
             if (l->getType() != IDENTIFIER or find(l->toString())) {
                 error("SYNTAX ERROR");
             }
-            state.setValue(l->toString(),r->eval(state));
+            state.setValue(l->toString(), r->eval(state));
             return;
         } else if (exp->toString() == "PRINT") {
             Expression *exp2 = readE(scanner);
             if (scanner.hasMoreTokens()) {
                 error("SYNTAX ERROR");
             }
-            cout<<exp2->eval(state)<<endl;
+            cout << exp2->eval(state) << endl;
             return;
-        } else if(exp->toString()=="INPUT") {
+        } else if (exp->toString() == "INPUT") {
             Expression *exp2 = readE(scanner);
             if (scanner.hasMoreTokens()) {
                 error("SYNTAX ERROR");
             }
-            int temp;
-            try {
+            TokenScanner scanner1;
+            string temp;
+            Expression *exp3;
+            scanner1.ignoreWhitespace();
+            scanner1.scanNumbers();
+            while(true) {
                 cout<<" ? ";
-                cin>>temp;
-                cin.get();
-                state.setValue(exp2->toString(),temp);
-
-            }catch (...){
-                error("INVALID NUMBER");
+                getline(cin, temp);
+                scanner1.setInput(temp);
+                 exp3= readE(scanner1);
+                if(exp3->getType()==CONSTANT and !scanner1.hasMoreTokens()) {
+                    break;
+                } else {
+                    cout<<"INVALID NUMBER"<<endl;
+                }
             }
+            state.setValue(exp2->toString(), exp3->eval(state));
             return;
         }
         error("SYNTAX ERROR");

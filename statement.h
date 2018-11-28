@@ -17,6 +17,8 @@ class Program;
 #include "exp.h"
 #include "program.h"
 #include "calculate.h"
+#include "tokenscanner.h"
+#include "parser.h"
 /*
  * Class: Statement
  * ----------------

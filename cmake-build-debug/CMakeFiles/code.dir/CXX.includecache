@@ -90,6 +90,20 @@ C:/Users/jinho/CLionProjects/BASIC/private/main.h
 
 C:/Users/jinho/CLionProjects/BASIC/private/tokenpatch.h
 
+C:/Users/jinho/CLionProjects/BASIC/program.cpp
+utility
+-
+tokenscanner.h
+C:/Users/jinho/CLionProjects/BASIC/tokenscanner.h
+parser.h
+C:/Users/jinho/CLionProjects/BASIC/parser.h
+exp.h
+C:/Users/jinho/CLionProjects/BASIC/exp.h
+string
+-
+program.h
+C:/Users/jinho/CLionProjects/BASIC/program.h
+
 C:/Users/jinho/CLionProjects/BASIC/program.h
 utility
 -
@@ -131,6 +145,10 @@ program.h
 C:/Users/jinho/CLionProjects/BASIC/program.h
 calculate.h
 C:/Users/jinho/CLionProjects/BASIC/calculate.h
+tokenscanner.h
+C:/Users/jinho/CLionProjects/BASIC/tokenscanner.h
+parser.h
+C:/Users/jinho/CLionProjects/BASIC/parser.h
 
 C:/Users/jinho/CLionProjects/BASIC/strlib.h
 iostream

@@ -79,6 +79,7 @@ void Program::execute(EvalState &state) {
     current=(*(stmts.begin())).first;
 
     for (auto i = stmts.begin(); i != stmts.end();) {
+        current=(*i).first;
         int temp=current;
         (*i).second->execute(state);
         if ((*i).second->gettype() == ending) {

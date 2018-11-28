@@ -76,6 +76,8 @@ void Program::switchstmt(int lineno) {
     current=lineno;
 }
 void Program::execute(EvalState state) {
+    current=(*(stmts.begin())).first;
+    int temp=current;
     for (auto i = stmts.begin(); i != stmts.end(); i++) {
         (*i).second->execute(state);
         if ((*i).second->gettype() == ending) {
@@ -86,8 +88,10 @@ void Program::execute(EvalState state) {
             i--;
         }
         if ((*i).second->gettype() == IF) {
-            i=stmts.find(current);
-            i--;
+            if(temp!=current) {
+                i = stmts.find(current);
+                i--;
+            }
         }
     }
 }

@@ -11,7 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="833e9a53-e9bf-4fc6-ba0c-c43ed1685f25" name="Default Changelist" comment="" />
+    <list default="true" id="833e9a53-e9bf-4fc6-ba0c-c43ed1685f25" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/program.cpp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,33 +37,35 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="BASIC (disassembly)" value="1" />
           <entry key="COMMIT_EDITMSG" value="4" />
-          <entry key="cpp" value="64" />
-          <entry key="h" value="54" />
+          <entry key="cpp" value="65" />
+          <entry key="h" value="58" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="2" />
-          <entry key="ObjectiveC" value="118" />
+          <entry key="Disassembly" value="1" />
+          <entry key="ObjectiveC" value="123" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="COMMIT_EDITMSG" value="75" />
-          <entry key="cpp" value="4135" />
+          <entry key="cpp" value="4206" />
           <entry key="h" value="1392" />
-          <entry key="mm" value="4" />
-          <entry key="txt" value="124" />
+          <entry key="mm" value="56" />
+          <entry key="txt" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="114" />
-          <entry key="ObjectiveC" value="5531" />
-          <entry key="PLAIN_TEXT" value="85" />
+          <entry key="ObjectiveC" value="5654" />
+          <entry key="PLAIN_TEXT" value="90" />
         </counts>
       </usages-collector>
     </session>
@@ -82,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Basic.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="145" column="33" lean-forward="true" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+            <state relative-caret-position="171">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#258#275#0" expanded="true" />
               </folding>
@@ -103,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statement.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="98" column="1" lean-forward="true" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+            <state relative-caret-position="147">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#334#351#0" expanded="true" />
@@ -128,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evalstate.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="113">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#263#280#0" expanded="true" />
@@ -140,11 +145,38 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/program.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="83" column="39" lean-forward="true" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+            <state relative-caret-position="62">
+              <caret line="91" column="40" lean-forward="true" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_tree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="150" selection-start-line="150" selection-end-line="150" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ext/aligned_buffer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calculate.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -181,10 +213,10 @@
         <option value="$PROJECT_DIR$/exp.cpp" />
         <option value="$PROJECT_DIR$/parser.cpp" />
         <option value="$PROJECT_DIR$/.git/COMMIT_EDITMSG" />
-        <option value="$PROJECT_DIR$/Basic.cpp" />
-        <option value="$PROJECT_DIR$/program.cpp" />
         <option value="$PROJECT_DIR$/statement.h" />
         <option value="$PROJECT_DIR$/statement.cpp" />
+        <option value="$PROJECT_DIR$/Basic.cpp" />
+        <option value="$PROJECT_DIR$/program.cpp" />
       </list>
     </option>
   </component>
@@ -283,14 +315,31 @@
       <option name="project" value="LOCAL" />
       <updated>1543393249957</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FIX BUG IF list">
+      <created>1543396363631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543396363631</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30547000" />
+    <option name="totallyTimeSpent" value="31786000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2700081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -298,15 +347,15 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40213522" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39679715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32740214" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="11" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3291815" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -357,27 +406,65 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="FIX BUG IF" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX BUG IF" />
+    <MESSAGE value="FIX BUG IF list" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX BUG IF list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Basic.cpp</url>
-          <line>48</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/evalstate.cpp</url>
           <line>23</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Basic.cpp</url>
+          <line>48</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="current" language="ObjectiveC" />
+        <watch expression="stmts" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>current</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stmts[2]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stmts[2].second</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stmts[15]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stmts[]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stmts</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>l-&gt;getType()</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -415,37 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evalstate.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#263#280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpio.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calculate.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calculate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" selection-start-line="10" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/error.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -480,6 +536,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="e#244#263#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -487,16 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="145" column="1" lean-forward="true" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#107#124#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,37 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/program.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="83" column="39" lean-forward="true" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="145" column="33" lean-forward="true" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
-          <folding>
-            <element signature="e#258#275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statement.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="98" column="1" lean-forward="true" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#334#351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/statement.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -586,6 +604,95 @@
           <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
           <folding>
             <element signature="e#278#295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" selection-start-line="10" selection-end-line="10" selection-end-column="45" />
+          <folding>
+            <element signature="e#95#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpio.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#107#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#258#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evalstate.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#263#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_tree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ext/aligned_buffer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculate.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statement.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#334#351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="91" column="40" lean-forward="true" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

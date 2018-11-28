@@ -230,6 +230,7 @@ void processLine(string line, Program &program, EvalState &state) {
             }
             int temp;
             try {
+                cout<<"?"<<endl;
                 cin>>temp;
                 cin.get();
                 state.setValue(exp2->toString(),temp);

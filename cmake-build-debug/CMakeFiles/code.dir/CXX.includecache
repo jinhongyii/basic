@@ -6,43 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/jinho/CLionProjects/BASIC/Basic.cpp
-cctype
--
-iostream
--
-string
--
-exp.h
-C:/Users/jinho/CLionProjects/BASIC/exp.h
-parser.h
-C:/Users/jinho/CLionProjects/BASIC/parser.h
-program.h
-C:/Users/jinho/CLionProjects/BASIC/program.h
-calculate.h
-C:/Users/jinho/CLionProjects/BASIC/calculate.h
-error.h
-C:/Users/jinho/CLionProjects/BASIC/error.h
-tokenscanner.h
-C:/Users/jinho/CLionProjects/BASIC/tokenscanner.h
-simpio.h
-C:/Users/jinho/CLionProjects/BASIC/simpio.h
-strlib.h
-C:/Users/jinho/CLionProjects/BASIC/strlib.h
-
 C:/Users/jinho/CLionProjects/BASIC/calculate.h
 exp.h
 C:/Users/jinho/CLionProjects/BASIC/exp.h
 evalstate.h
 C:/Users/jinho/CLionProjects/BASIC/evalstate.h
-
-C:/Users/jinho/CLionProjects/BASIC/error.h
-string
--
-exception
--
-private/main.h
-C:/Users/jinho/CLionProjects/BASIC/private/main.h
 
 C:/Users/jinho/CLionProjects/BASIC/evalstate.h
 string
@@ -86,9 +54,21 @@ C:/Users/jinho/CLionProjects/BASIC/exp.h
 tokenscanner.h
 C:/Users/jinho/CLionProjects/BASIC/tokenscanner.h
 
-C:/Users/jinho/CLionProjects/BASIC/private/main.h
-
 C:/Users/jinho/CLionProjects/BASIC/private/tokenpatch.h
+
+C:/Users/jinho/CLionProjects/BASIC/program.cpp
+utility
+-
+tokenscanner.h
+C:/Users/jinho/CLionProjects/BASIC/tokenscanner.h
+parser.h
+C:/Users/jinho/CLionProjects/BASIC/parser.h
+exp.h
+C:/Users/jinho/CLionProjects/BASIC/exp.h
+string
+-
+program.h
+C:/Users/jinho/CLionProjects/BASIC/program.h
 
 C:/Users/jinho/CLionProjects/BASIC/program.h
 utility
@@ -100,10 +80,6 @@ C:/Users/jinho/CLionProjects/BASIC/statement.h
 map
 -
 vector
--
-
-C:/Users/jinho/CLionProjects/BASIC/simpio.h
-string
 -
 
 C:/Users/jinho/CLionProjects/BASIC/stack.h

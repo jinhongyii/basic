@@ -14,6 +14,7 @@
  */
 bool endingflag=false;
 #include <string>
+
 #include "statement.h"
 
 using namespace std;
@@ -29,11 +30,10 @@ Statement::~Statement() {
 }
 statementtype Statement::gettype() {}
 
-assignmentstmt::assignmentstmt(int value, string var) : value(value), var(std::move(var)) {
-}
+assignmentstmt::assignmentstmt(Expression *exp, string var) :exp(exp),var(var){}
 
 void assignmentstmt::execute(EvalState &state) {
-    state.setValue(var, value);
+    state.setValue(var, exp->eval(state));
 }
 statementtype assignmentstmt::gettype() {
     return assignment;

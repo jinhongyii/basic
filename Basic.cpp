@@ -95,7 +95,6 @@ void processLine(string line, Program &program, EvalState &state) {
         if (exp->toString() == "LET") {
             Expression *exp2 = readE(scanner);
             if (scanner.hasMoreTokens()) {
-
                 error("SYNTAX ERROR");
             }
             auto l = ((CompoundExp *) exp2)->getLHS();
@@ -104,7 +103,7 @@ void processLine(string line, Program &program, EvalState &state) {
                 program.removeSourceLine(lineno);
                 error("SYNTAX ERROR");
             }
-            Statement *temp = new assignmentstmt(r->eval(state), l->toString());
+            Statement *temp = new assignmentstmt(r, l->toString());
             program.setParsedStatement(lineno, temp);
             program.addSourceLine(lineno, line);
             return;

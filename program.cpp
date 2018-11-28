@@ -77,8 +77,9 @@ void Program::switchstmt(int lineno) {
 }
 void Program::execute(EvalState &state) {
     current=(*(stmts.begin())).first;
-    int temp=current;
+
     for (auto i = stmts.begin(); i != stmts.end();) {
+        int temp=current;
         (*i).second->execute(state);
         if ((*i).second->gettype() == ending) {
             break;

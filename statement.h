@@ -82,10 +82,10 @@ public:
  */
 class assignmentstmt: public Statement {
 private:
-    int value;
+    Expression* exp;
     string var;
 public:
-    assignmentstmt(int value,string var);
+    assignmentstmt(Expression* exp,string var);
     virtual void execute(EvalState & state);
     virtual statementtype gettype();
 };

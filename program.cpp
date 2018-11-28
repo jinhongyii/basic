@@ -85,6 +85,10 @@ void Program::execute(EvalState state) {
             i=stmts.find(current);
             i--;
         }
+        if ((*i).second->gettype() == IF) {
+            i=stmts.find(current);
+            i--;
+        }
     }
 }
 void Program::showlines() {

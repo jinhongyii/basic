@@ -38,12 +38,13 @@ void assignmentstmt::execute(EvalState &state) {
 statementtype assignmentstmt::gettype() {
     return assignment;
 }
-printstmt::printstmt(string var) : var(std::move(var)) {
+printstmt::printstmt(Expression *exp):exp(exp) {
+
 }
 
 void printstmt::execute(EvalState &state) {
 
-    cout << state.getValue(var)<<endl;
+    cout << exp->eval(state)<<endl;
 }
 statementtype printstmt::gettype() {
     return print;

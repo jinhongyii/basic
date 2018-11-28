@@ -89,9 +89,9 @@ public:
 
 class printstmt :public Statement{
 private:
-    string var;
+    Expression* exp;
 public:
-    printstmt(string var);
+    printstmt(Expression* exp);
     virtual void execute(EvalState & state);
     virtual statementtype gettype();
 };

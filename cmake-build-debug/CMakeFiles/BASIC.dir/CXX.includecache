@@ -6,6 +6,36 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/jinho/CLionProjects/BASIC/Basic.cpp
+cctype
+-
+iostream
+-
+string
+-
+exp.h
+C:/Users/jinho/CLionProjects/BASIC/exp.h
+parser.h
+C:/Users/jinho/CLionProjects/BASIC/parser.h
+program.h
+C:/Users/jinho/CLionProjects/BASIC/program.h
+calculate.h
+C:/Users/jinho/CLionProjects/BASIC/calculate.h
+error.h
+C:/Users/jinho/CLionProjects/BASIC/error.h
+tokenscanner.h
+C:/Users/jinho/CLionProjects/BASIC/tokenscanner.h
+simpio.h
+C:/Users/jinho/CLionProjects/BASIC/simpio.h
+strlib.h
+C:/Users/jinho/CLionProjects/BASIC/strlib.h
+
+C:/Users/jinho/CLionProjects/BASIC/calculate.h
+exp.h
+C:/Users/jinho/CLionProjects/BASIC/exp.h
+evalstate.h
+C:/Users/jinho/CLionProjects/BASIC/evalstate.h
+
 C:/Users/jinho/CLionProjects/BASIC/error.h
 string
 -
@@ -48,22 +78,6 @@ C:/Users/jinho/CLionProjects/BASIC/foreach.h
 stack.h
 C:/Users/jinho/CLionProjects/BASIC/stack.h
 
-C:/Users/jinho/CLionProjects/BASIC/parser.cpp
-iostream
--
-string
--
-exp.h
-C:/Users/jinho/CLionProjects/BASIC/exp.h
-parser.h
-C:/Users/jinho/CLionProjects/BASIC/parser.h
-error.h
-C:/Users/jinho/CLionProjects/BASIC/error.h
-strlib.h
-C:/Users/jinho/CLionProjects/BASIC/strlib.h
-tokenscanner.h
-C:/Users/jinho/CLionProjects/BASIC/tokenscanner.h
-
 C:/Users/jinho/CLionProjects/BASIC/parser.h
 string
 -
@@ -76,9 +90,35 @@ C:/Users/jinho/CLionProjects/BASIC/private/main.h
 
 C:/Users/jinho/CLionProjects/BASIC/private/tokenpatch.h
 
+C:/Users/jinho/CLionProjects/BASIC/program.h
+utility
+-
+string
+-
+statement.h
+C:/Users/jinho/CLionProjects/BASIC/statement.h
+map
+-
+vector
+-
+
+C:/Users/jinho/CLionProjects/BASIC/simpio.h
+string
+-
+
 C:/Users/jinho/CLionProjects/BASIC/stack.h
 vector.h
 C:/Users/jinho/CLionProjects/BASIC/vector.h
+
+C:/Users/jinho/CLionProjects/BASIC/statement.h
+evalstate.h
+C:/Users/jinho/CLionProjects/BASIC/evalstate.h
+exp.h
+C:/Users/jinho/CLionProjects/BASIC/exp.h
+program.h
+C:/Users/jinho/CLionProjects/BASIC/program.h
+calculate.h
+C:/Users/jinho/CLionProjects/BASIC/calculate.h
 
 C:/Users/jinho/CLionProjects/BASIC/strlib.h
 iostream

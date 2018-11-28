@@ -6,14 +6,18 @@ CMakeFiles/BASIC.dir/Basic.cpp.obj: ../calculate.h
 CMakeFiles/BASIC.dir/Basic.cpp.obj: ../error.h
 CMakeFiles/BASIC.dir/Basic.cpp.obj: ../evalstate.h
 CMakeFiles/BASIC.dir/Basic.cpp.obj: ../exp.h
+CMakeFiles/BASIC.dir/Basic.cpp.obj: ../foreach.h
 CMakeFiles/BASIC.dir/Basic.cpp.obj: ../map.h
 CMakeFiles/BASIC.dir/Basic.cpp.obj: ../parser.h
+CMakeFiles/BASIC.dir/Basic.cpp.obj: ../private/main.h
+CMakeFiles/BASIC.dir/Basic.cpp.obj: ../private/tokenpatch.h
 CMakeFiles/BASIC.dir/Basic.cpp.obj: ../program.h
 CMakeFiles/BASIC.dir/Basic.cpp.obj: ../simpio.h
+CMakeFiles/BASIC.dir/Basic.cpp.obj: ../stack.h
 CMakeFiles/BASIC.dir/Basic.cpp.obj: ../statement.h
 CMakeFiles/BASIC.dir/Basic.cpp.obj: ../strlib.h
-CMakeFiles/BASIC.dir/Basic.cpp.obj: ../tokenpatch.h
 CMakeFiles/BASIC.dir/Basic.cpp.obj: ../tokenscanner.h
+CMakeFiles/BASIC.dir/Basic.cpp.obj: ../vector.h
 
 CMakeFiles/BASIC.dir/calculate.cpp.obj: ../calculate.cpp
 CMakeFiles/BASIC.dir/calculate.cpp.obj: ../calculate.h

@@ -99,7 +99,7 @@ void processLine(string line, Program &program, EvalState &state) {
             }
             Statement *temp = new assignmentstmt(r->eval(state), l->toString());
             program.setParsedStatement(lineno, temp);
-            program.addSourceLine(value, line);
+            program.addSourceLine(lineno, line);
             return;
         } else if (exp->toString() == "INPUT") {
             Expression *exp2 = readE(scanner);
@@ -109,7 +109,7 @@ void processLine(string line, Program &program, EvalState &state) {
 
             Statement *temp = new inputstmt(exp2->toString());
             program.setParsedStatement(lineno, temp);
-            program.addSourceLine(value, line);
+            program.addSourceLine(lineno, line);
             return;
         } else if (exp->toString() == "PRINT") {
             Expression *exp2 = readE(scanner);
@@ -120,12 +120,12 @@ void processLine(string line, Program &program, EvalState &state) {
 
             Statement *temp = new printstmt(exp2);
             program.setParsedStatement(lineno, temp);
-            program.addSourceLine(value, line);
+            program.addSourceLine(lineno, line);
             return;
         } else if (exp->toString() == "REM") {
             Statement *temp = new commentstmt();
             program.setParsedStatement(lineno, temp);
-            program.addSourceLine(value, line);
+            program.addSourceLine(lineno, line);
             return;
         } else if (exp->toString() == "END") {
             if (scanner.hasMoreTokens()) {
@@ -134,7 +134,7 @@ void processLine(string line, Program &program, EvalState &state) {
             }
             Statement *temp = new endstmt();
             program.setParsedStatement(lineno, temp);
-            program.addSourceLine(value, line);
+            program.addSourceLine(lineno, line);
             return;
         } else if (exp->toString() == "GOTO") {
             Expression *exp2 = readE(scanner);
@@ -145,7 +145,7 @@ void processLine(string line, Program &program, EvalState &state) {
 
             Statement *temp = new Gotostmt(exp2->eval(state), program);
             program.setParsedStatement(lineno, temp);
-            program.addSourceLine(value, line);
+            program.addSourceLine(lineno, line);
             return;
         } else if (exp->toString() == "IF") {
             Expression *exp2 = readE(scanner);
@@ -162,6 +162,7 @@ void processLine(string line, Program &program, EvalState &state) {
             }
             Statement *temp = new IFstmt(exp2, exp3->eval(state), program);
             program.setParsedStatement(lineno, temp);
+            program.addSourceLine(lineno, line);
             return;
         }
         error("SYNTAX ERROR");

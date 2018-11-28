@@ -75,7 +75,7 @@ void Program::switchstmt(int lineno) {
     }
     current=lineno;
 }
-void Program::execute(EvalState state) {
+void Program::execute(EvalState &state) {
     current=(*(stmts.begin())).first;
     int temp=current;
     for (auto i = stmts.begin(); i != stmts.end(); i++) {

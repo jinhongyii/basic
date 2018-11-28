@@ -142,7 +142,7 @@ public:
 
    int getNextLineNumber(int lineNumber);
    void switchstmt(int lineno);
-   void execute(EvalState state);
+   void execute(EvalState &state);
    void showlines();
    bool hasline(int line);
 };

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="BASIC" targetName="BASIC" />
+      <config projectName="BASIC" targetName="code" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -11,8 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="833e9a53-e9bf-4fc6-ba0c-c43ed1685f25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+    <list default="true" id="833e9a53-e9bf-4fc6-ba0c-c43ed1685f25" name="Default Changelist" comment="change exe name to code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -38,18 +37,18 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="BASIC (disassembly)" value="1" />
-          <entry key="COMMIT_EDITMSG" value="4" />
+          <entry key="COMMIT_EDITMSG" value="5" />
           <entry key="cpp" value="73" />
           <entry key="h" value="60" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="2" />
+          <entry key="CMakeLists.txt" value="3" />
           <entry key="Disassembly" value="1" />
           <entry key="ObjectiveC" value="133" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -58,14 +57,14 @@
           <entry key="cpp" value="4206" />
           <entry key="h" value="1392" />
           <entry key="mm" value="56" />
-          <entry key="txt" value="174" />
+          <entry key="txt" value="210" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="114" />
+          <entry key="CMakeLists.txt" value="118" />
           <entry key="ObjectiveC" value="5654" />
-          <entry key="PLAIN_TEXT" value="135" />
+          <entry key="PLAIN_TEXT" value="167" />
         </counts>
       </usages-collector>
     </session>
@@ -75,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Basic.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
+            <state relative-caret-position="171">
               <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#258#275#0" expanded="true" />
@@ -84,20 +83,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpio.cpp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpio.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statement.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
-              <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+              <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#334#351#0" expanded="true" />
@@ -134,7 +142,7 @@
         <entry file="file://$PROJECT_DIR$/program.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1156">
-              <caret line="69" column="43" lean-forward="true" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+              <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -193,7 +201,6 @@
         <option value="$PROJECT_DIR$/calculate.h" />
         <option value="$PROJECT_DIR$/calculate.cpp" />
         <option value="$PROJECT_DIR$/program.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/evalstate.cpp" />
         <option value="$PROJECT_DIR$/evalstate.h" />
         <option value="$PROJECT_DIR$/parser.h" />
@@ -205,6 +212,7 @@
         <option value="$PROJECT_DIR$/statement.cpp" />
         <option value="$PROJECT_DIR$/Basic.cpp" />
         <option value="$PROJECT_DIR$/program.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -318,11 +326,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543397478284</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change exe name to code">
+      <created>1543398196186</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543398196186</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32338000" />
+    <option name="totallyTimeSpent" value="32829000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,6 +350,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2700081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -347,10 +363,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32740214" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.32740214" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.3291815" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4995958" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4995958" weight="0.3291815" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -405,7 +421,8 @@
     <MESSAGE value="FIX BUG IF" />
     <MESSAGE value="FIX BUG IF list" />
     <MESSAGE value="FIX BUG switchstmt(the instantiation of current)" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX BUG switchstmt(the instantiation of current)" />
+    <MESSAGE value="change exe name to code" />
+    <option name="LAST_COMMIT_MESSAGE" value="change exe name to code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -491,13 +508,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../StanfordCPPLib/simpio.cpp" />
     <entry file="file://$PROJECT_DIR$/../StanfordCPPLib/map.h" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/error.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -535,13 +545,6 @@
           <folding>
             <element signature="e#244#263#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.git/COMMIT_EDITMSG">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="145" column="1" lean-forward="true" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -619,20 +622,10 @@
         <state relative-caret-position="-6375" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#258#275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simpio.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
@@ -659,7 +652,7 @@
     <entry file="file://$PROJECT_DIR$/program.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
-          <caret line="69" column="43" lean-forward="true" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -687,14 +680,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.git/COMMIT_EDITMSG">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/statement.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
-          <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#334#351#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#258#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

@@ -34,7 +34,7 @@ bool find(string a) {
     }
     return false;
 }
-
+//detect error and process lines according to its type(beginning with number or word)
 void processLine(string line, Program &program, EvalState &state);
 
 /* Main program */
@@ -43,7 +43,6 @@ bool flag = false;
 int main() {
     EvalState state;
     Program program;
-    //cout << "Stub implementation of BASIC" << endl;
 
     while (true) {
         try {
@@ -58,7 +57,6 @@ int main() {
 
         }
     }
-    return 0;
 }
 
 /*
@@ -100,12 +98,12 @@ void processLine(string line, Program &program, EvalState &state) {
             auto l = ((CompoundExp *) exp2)->getLHS();
             auto r = ((CompoundExp *) exp2)->getRHS();
             if (l->getType() != IDENTIFIER or find(l->toString())) {
-                program.removeSourceLine(lineno);
                 error("SYNTAX ERROR");
             }
             Statement *temp = new assignmentstmt(r, l->toString());
             program.setParsedStatement(lineno, temp);
             program.addSourceLine(lineno, line);
+            delete exp;
             return;
         } else if (exp->toString() == "INPUT") {
             Expression *exp2 = readE(scanner);
@@ -116,6 +114,7 @@ void processLine(string line, Program &program, EvalState &state) {
             Statement *temp = new inputstmt(exp2->toString());
             program.setParsedStatement(lineno, temp);
             program.addSourceLine(lineno, line);
+            delete exp;
             return;
         } else if (exp->toString() == "PRINT") {
             Expression *exp2 = readE(scanner);
@@ -127,11 +126,13 @@ void processLine(string line, Program &program, EvalState &state) {
             Statement *temp = new printstmt(exp2);
             program.setParsedStatement(lineno, temp);
             program.addSourceLine(lineno, line);
+            delete exp;
             return;
         } else if (exp->toString() == "REM") {
             Statement *temp = new commentstmt();
             program.setParsedStatement(lineno, temp);
             program.addSourceLine(lineno, line);
+            delete exp;
             return;
         } else if (exp->toString() == "END") {
             if (scanner.hasMoreTokens()) {
@@ -141,6 +142,7 @@ void processLine(string line, Program &program, EvalState &state) {
             Statement *temp = new endstmt();
             program.setParsedStatement(lineno, temp);
             program.addSourceLine(lineno, line);
+            delete exp;
             return;
         } else if (exp->toString() == "GOTO") {
             Expression *exp2 = readE(scanner);
@@ -152,11 +154,11 @@ void processLine(string line, Program &program, EvalState &state) {
             Statement *temp = new Gotostmt(exp2->eval(state), program);
             program.setParsedStatement(lineno, temp);
             program.addSourceLine(lineno, line);
+            delete exp;
+
             return;
         } else if (exp->toString() == "IF") {
             Expression *exp2 = readE(scanner);
-            //auto i = ((CompoundExp *) exp2)->getLHS()->eval(state);
-            //auto j = ((CompoundExp *) exp2)->getRHS()->eval(state);
             auto op = ((CompoundExp *) exp2)->getOp();
             Expression *exp3 = readE(scanner);
             if (op != ">" and op != "<" and op != "=" and exp3->toString() != "THEN") {
@@ -169,8 +171,10 @@ void processLine(string line, Program &program, EvalState &state) {
             Statement *temp = new IFstmt(exp2, exp3->eval(state), program);
             program.setParsedStatement(lineno, temp);
             program.addSourceLine(lineno, line);
+            delete exp;
             return;
         }
+        delete exp;
         error("SYNTAX ERROR");
     } else if (exp->getType() == IDENTIFIER) {
         if (exp->toString() == "RUN") {
@@ -178,12 +182,14 @@ void processLine(string line, Program &program, EvalState &state) {
                 error("SYNTAX ERROR");
             }
             program.execute(state);
+            delete exp;
             return;
         } else if (exp->toString() == "LIST") {
             if (scanner.hasMoreTokens()) {
                 error("SYNTAX ERROR");
             }
             program.showlines();
+            delete exp;
             return;
         } else if (exp->toString() == "CLEAR") {
             if (scanner.hasMoreTokens()) {
@@ -191,18 +197,21 @@ void processLine(string line, Program &program, EvalState &state) {
             }
             program.clear();
             state.clear();
+            delete exp;
             return;
         } else if (exp->toString() == "QUIT") {
             if (scanner.hasMoreTokens()) {
                 error("SYNTAX ERROR");
             }
             flag = true;
+            delete exp;
             return;
         } else if (exp->toString() == "HELP") {
             if (scanner.hasMoreTokens()) {
                 error("SYNTAX ERROR");
             }
             cout << "Yet another basic interpreter" << endl;
+            delete exp;
             return;
         } else if (exp->toString() == "LET") {
             Expression *exp2 = readE(scanner);
@@ -215,6 +224,7 @@ void processLine(string line, Program &program, EvalState &state) {
                 error("SYNTAX ERROR");
             }
             state.setValue(l->toString(), r->eval(state));
+            delete exp;
             return;
         } else if (exp->toString() == "PRINT") {
             Expression *exp2 = readE(scanner);
@@ -222,6 +232,7 @@ void processLine(string line, Program &program, EvalState &state) {
                 error("SYNTAX ERROR");
             }
             cout << exp2->eval(state) << endl;
+            delete exp;
             return;
         } else if (exp->toString() == "INPUT") {
             Expression *exp2 = readE(scanner);
@@ -241,9 +252,10 @@ void processLine(string line, Program &program, EvalState &state) {
                     cout<<"INVALID NUMBER"<<endl;
                 }
             } while (!correct);
-            //cin.get();
+            delete exp;
             return;
         }
+        delete exp;
         error("SYNTAX ERROR");
     }
 }

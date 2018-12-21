@@ -3,25 +3,7 @@
 //
 
 #include "calculate.h"
-/*int calculate(Expression* exp){
-    if (exp->getType() == IDENTIFIER) {
-        return exp->eval()；
-    } else if (exp->getType()==CONSTANT) {
-        return exp->eval();
-    }
-    auto l=((CompoundExp*)exp)->getLHS();
-    auto r=((CompoundExp*)exp)->getRHS();
-    auto op=((CompoundExp*)exp)->getOp();
-    if (op == "+") {
-        return calculate(l)+calculate(r);
-    } else if (op == "-") {
-        return calculate(l)-calculate(r);
-    } else if (op == "*") {
-        return calculate(l)*calculate(r);
-    } else if (op == "/") {
-        return calculate(l)/calculate(r);
-    }
-}*/
+//处理不等式的结果
 bool compare(Expression *exp,EvalState&state){
     auto l=((CompoundExp*)exp)->getLHS();
     auto r=((CompoundExp*)exp)->getRHS();

@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/jinho/CLionProjects/BASIC/Basic.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/Basic.cpp.obj"
-  "C:/Users/jinho/CLionProjects/BASIC/calculate.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/calculate.cpp.obj"
-  "C:/Users/jinho/CLionProjects/BASIC/error.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/error.cpp.obj"
-  "C:/Users/jinho/CLionProjects/BASIC/evalstate.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/evalstate.cpp.obj"
-  "C:/Users/jinho/CLionProjects/BASIC/exp.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/exp.cpp.obj"
-  "C:/Users/jinho/CLionProjects/BASIC/parser.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/parser.cpp.obj"
-  "C:/Users/jinho/CLionProjects/BASIC/program.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/program.cpp.obj"
-  "C:/Users/jinho/CLionProjects/BASIC/simpio.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/simpio.cpp.obj"
-  "C:/Users/jinho/CLionProjects/BASIC/statement.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/statement.cpp.obj"
-  "C:/Users/jinho/CLionProjects/BASIC/strlib.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/strlib.cpp.obj"
-  "C:/Users/jinho/CLionProjects/BASIC/tokenscanner.cpp" "C:/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/tokenscanner.cpp.obj"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/Basic.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/Basic.cpp.o"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/calculate.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/calculate.cpp.o"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/error.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/error.cpp.o"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/evalstate.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/evalstate.cpp.o"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/exp.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/exp.cpp.o"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/parser.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/parser.cpp.o"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/program.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/program.cpp.o"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/simpio.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/simpio.cpp.o"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/statement.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/statement.cpp.o"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/strlib.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/strlib.cpp.o"
+  "/mnt/c/Users/jinho/CLionProjects/BASIC/tokenscanner.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/tokenscanner.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

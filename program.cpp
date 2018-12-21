@@ -19,7 +19,6 @@
 using namespace std;
 
 Program::Program() {
-    // Replace this stub with your own code
 }
 
 Program::~Program() {
@@ -29,46 +28,37 @@ Program::~Program() {
 }
 
 void Program::clear() {
-    // Replace this stub with your own code
     lines.clear();
     stmts.clear();
 }
 
 void Program::addSourceLine(int lineNumber, string line) {
-    // Replace this stub with your own code
     lines[lineNumber] = std::move(line);
 }
 
 void Program::removeSourceLine(int lineNumber) {
-    // Replace this stub with your own code
     lines.erase(lineNumber);
 }
 
 string Program::getSourceLine(int lineNumber) {
 
-    return lines[lineNumber];    // Replace this stub with your own code
+    return lines[lineNumber];
 }
 
 void Program::setParsedStatement(int lineNumber, Statement *stmt) {
     stmts[lineNumber]=stmt;
-    // Replace this stub with your own code
 }
 
 Statement *Program::getParsedStatement(int lineNumber) {
 
-    return stmts[lineNumber];  // Replace this stub with your own code
+    return stmts[lineNumber];
 }
 
 int Program::getFirstLineNumber() {
-    return lines.empty() ? -1 : (lines.begin())->first;     // Replace this stub with your own code
+    return lines.empty() ? -1 : (lines.begin())->first;
 }
 
-int Program::getNextLineNumber(int lineNumber) {
-    auto temp = lines.find(lineNumber);
-    temp++;
-    return (temp==lines.end())?-1:temp->first;
-    // Replace this stub with your own code
-}
+
 void Program::switchstmt(int lineno) {
     if (lines.find(lineno) == lines.end()) {
         error("LINE NUMBER ERROR");
@@ -102,7 +92,4 @@ void Program::showlines() {
     for (auto i = lines.begin(); i != lines.end(); i++) {
         cout<<(*i).second<<endl;
     }
-}
-bool Program::hasline(int line) {
-    return lines.find(line)!=lines.end();
 }

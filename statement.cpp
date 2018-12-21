@@ -26,11 +26,12 @@ Statement::Statement() {
 }
 
 Statement::~Statement() {
-    /* Empty */
 }
 statementtype Statement::gettype() {}
 
 assignmentstmt::assignmentstmt(Expression *exp, string var) :exp(exp),var(var){}
+
+
 
 void assignmentstmt::execute(EvalState &state) {
     state.setValue(var, exp->eval(state));
@@ -97,7 +98,7 @@ statementtype Gotostmt::gettype() {
 IFstmt::IFstmt(Expression *condition, int gotoline,Program&program):condition(condition),gotoline(gotoline),program(program) {
 }
 void IFstmt::execute(EvalState &state) {
-    if (compare(condition, state)) {
+    if (condition->eval(state)) {
         program.switchstmt(gotoline);
     }
 }

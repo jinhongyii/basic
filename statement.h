@@ -80,6 +80,10 @@ public:
  * an Expression object), the class implementation must also
  * specify its own destructor method to free that memory.
  */
+
+
+/*写出所有的类
+ * 每个statement对应一种类，写出它的构造，执行，和gettype函数,和析构*/
 class assignmentstmt: public Statement {
 private:
     Expression* exp;
@@ -142,10 +146,5 @@ public:
     virtual void execute(EvalState & state);
     virtual statementtype gettype();
 };
-class emptystmt:public Statement{
-public:
-    emptystmt();
-    virtual void execute(EvalState & state);
-    virtual statementtype gettype();
-};
+
 #endif

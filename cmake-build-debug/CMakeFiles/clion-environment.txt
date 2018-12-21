@@ -1,4 +1,4 @@
-ToolSet: w64 3.4@C:\Program Files (x86)\Dev-Cpp\MinGW64
+ToolSet: Ubuntu 18.04.1 LTS@C:\Users\jinho\AppData\Local\Microsoft\WindowsApps\ubuntu.exe
 Options: 
 
 Options:

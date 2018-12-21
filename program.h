@@ -139,12 +139,12 @@ public:
  * number is larger than the specified one, which must already exist
  * in the program.  If no more lines remain, this method returns -1.
  */
-
-   int getNextLineNumber(int lineNumber);
+//改变当前执行行数
    void switchstmt(int lineno);
+   //执行所有的statement
    void execute(EvalState &state);
+   //展示所有的行
    void showlines();
-   bool hasline(int line);
 };
 
 #endif

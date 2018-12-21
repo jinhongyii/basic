@@ -3,7 +3,6 @@
  * ----------------
  * This file implements the strlib.h interface.
  */
-
 #include <cctype>
 #include <iomanip>
 #include <iostream>

@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/jinho/CLionProjects/BASIC/Basic.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/Basic.cpp.o"
-  "/mnt/c/Users/jinho/CLionProjects/BASIC/calculate.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/calculate.cpp.o"
   "/mnt/c/Users/jinho/CLionProjects/BASIC/error.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/error.cpp.o"
   "/mnt/c/Users/jinho/CLionProjects/BASIC/evalstate.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/evalstate.cpp.o"
   "/mnt/c/Users/jinho/CLionProjects/BASIC/exp.cpp" "/mnt/c/Users/jinho/CLionProjects/BASIC/cmake-build-debug/CMakeFiles/code.dir/exp.cpp.o"

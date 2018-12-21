@@ -16,7 +16,6 @@ class Program;
 #include "evalstate.h"
 #include "exp.h"
 #include "program.h"
-#include "calculate.h"
 #include "tokenscanner.h"
 #include "parser.h"
 #include "strlib.h"

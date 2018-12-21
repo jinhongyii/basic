@@ -3,7 +3,6 @@
 
 CMakeFiles/code.dir/Basic.cpp.o
  /mnt/c/Users/jinho/CLionProjects/BASIC/Basic.cpp
- /mnt/c/Users/jinho/CLionProjects/BASIC/calculate.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/error.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/evalstate.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/exp.h
@@ -18,16 +17,6 @@ CMakeFiles/code.dir/Basic.cpp.o
  /mnt/c/Users/jinho/CLionProjects/BASIC/statement.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/strlib.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/tokenscanner.h
- /mnt/c/Users/jinho/CLionProjects/BASIC/vector.h
-CMakeFiles/code.dir/calculate.cpp.o
- /mnt/c/Users/jinho/CLionProjects/BASIC/calculate.cpp
- /mnt/c/Users/jinho/CLionProjects/BASIC/calculate.h
- /mnt/c/Users/jinho/CLionProjects/BASIC/evalstate.h
- /mnt/c/Users/jinho/CLionProjects/BASIC/exp.h
- /mnt/c/Users/jinho/CLionProjects/BASIC/foreach.h
- /mnt/c/Users/jinho/CLionProjects/BASIC/map.h
- /mnt/c/Users/jinho/CLionProjects/BASIC/stack.h
- /mnt/c/Users/jinho/CLionProjects/BASIC/strlib.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/vector.h
 CMakeFiles/code.dir/error.cpp.o
  /mnt/c/Users/jinho/CLionProjects/BASIC/error.cpp
@@ -67,7 +56,6 @@ CMakeFiles/code.dir/parser.cpp.o
  /mnt/c/Users/jinho/CLionProjects/BASIC/tokenscanner.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/vector.h
 CMakeFiles/code.dir/program.cpp.o
- /mnt/c/Users/jinho/CLionProjects/BASIC/calculate.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/evalstate.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/exp.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/foreach.h
@@ -85,7 +73,6 @@ CMakeFiles/code.dir/simpio.cpp.o
  /mnt/c/Users/jinho/CLionProjects/BASIC/simpio.cpp
  /mnt/c/Users/jinho/CLionProjects/BASIC/simpio.h
 CMakeFiles/code.dir/statement.cpp.o
- /mnt/c/Users/jinho/CLionProjects/BASIC/calculate.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/evalstate.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/exp.h
  /mnt/c/Users/jinho/CLionProjects/BASIC/foreach.h

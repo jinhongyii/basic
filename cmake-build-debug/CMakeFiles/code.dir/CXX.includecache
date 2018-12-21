@@ -19,8 +19,6 @@ parser.h
 /mnt/c/Users/jinho/CLionProjects/BASIC/parser.h
 program.h
 /mnt/c/Users/jinho/CLionProjects/BASIC/program.h
-calculate.h
-/mnt/c/Users/jinho/CLionProjects/BASIC/calculate.h
 error.h
 /mnt/c/Users/jinho/CLionProjects/BASIC/error.h
 tokenscanner.h
@@ -29,16 +27,6 @@ simpio.h
 /mnt/c/Users/jinho/CLionProjects/BASIC/simpio.h
 strlib.h
 /mnt/c/Users/jinho/CLionProjects/BASIC/strlib.h
-
-/mnt/c/Users/jinho/CLionProjects/BASIC/calculate.cpp
-calculate.h
-/mnt/c/Users/jinho/CLionProjects/BASIC/calculate.h
-
-/mnt/c/Users/jinho/CLionProjects/BASIC/calculate.h
-exp.h
-/mnt/c/Users/jinho/CLionProjects/BASIC/exp.h
-evalstate.h
-/mnt/c/Users/jinho/CLionProjects/BASIC/evalstate.h
 
 /mnt/c/Users/jinho/CLionProjects/BASIC/error.cpp
 exception
@@ -205,8 +193,6 @@ exp.h
 /mnt/c/Users/jinho/CLionProjects/BASIC/exp.h
 program.h
 /mnt/c/Users/jinho/CLionProjects/BASIC/program.h
-calculate.h
-/mnt/c/Users/jinho/CLionProjects/BASIC/calculate.h
 tokenscanner.h
 /mnt/c/Users/jinho/CLionProjects/BASIC/tokenscanner.h
 parser.h

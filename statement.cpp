@@ -12,7 +12,6 @@
  * the same for the subclasses you define for each of the
  * BASIC statements.
  */
-bool endingflag=false;
 #include <string>
 
 #include "statement.h"
@@ -104,9 +103,4 @@ void IFstmt::execute(EvalState &state) {
 }
 statementtype IFstmt::gettype() {
     return IF;
-}
-emptystmt::emptystmt() {}
-void emptystmt::execute(EvalState &state) {}
-statementtype emptystmt::gettype() {
-    return empty;
 }

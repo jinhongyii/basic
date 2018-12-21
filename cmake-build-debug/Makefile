@@ -150,33 +150,6 @@ Basic.cpp.s:
 	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/Basic.cpp.s
 .PHONY : Basic.cpp.s
 
-calculate.o: calculate.cpp.o
-
-.PHONY : calculate.o
-
-# target to build an object file
-calculate.cpp.o:
-	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/calculate.cpp.o
-.PHONY : calculate.cpp.o
-
-calculate.i: calculate.cpp.i
-
-.PHONY : calculate.i
-
-# target to preprocess a source file
-calculate.cpp.i:
-	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/calculate.cpp.i
-.PHONY : calculate.cpp.i
-
-calculate.s: calculate.cpp.s
-
-.PHONY : calculate.s
-
-# target to generate assembly for a file
-calculate.cpp.s:
-	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/calculate.cpp.s
-.PHONY : calculate.cpp.s
-
 error.o: error.cpp.o
 
 .PHONY : error.o
@@ -432,9 +405,6 @@ help:
 	@echo "... Basic.o"
 	@echo "... Basic.i"
 	@echo "... Basic.s"
-	@echo "... calculate.o"
-	@echo "... calculate.i"
-	@echo "... calculate.s"
 	@echo "... error.o"
 	@echo "... error.i"
 	@echo "... error.s"

@@ -9,7 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/code.dir/tokenscanner.cpp.o"
   "CMakeFiles/code.dir/simpio.cpp.o"
   "CMakeFiles/code.dir/strlib.cpp.o"
-  "CMakeFiles/code.dir/calculate.cpp.o"
   "code.pdb"
   "code"
 )

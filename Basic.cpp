@@ -14,7 +14,6 @@
 #include "exp.h"
 #include "parser.h"
 #include "program.h"
-#include "calculate.h"
 #include "error.h"
 #include "tokenscanner.h"
 #include "simpio.h"

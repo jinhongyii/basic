@@ -87,12 +87,6 @@
 		<Unit filename="/mnt/c/Users/jinho/CLionProjects/BASIC/Basic.cpp">
 			<Option target="code"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/jinho/CLionProjects/BASIC/calculate.cpp">
-			<Option target="code"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/jinho/CLionProjects/BASIC/calculate.h">
-			<Option target="code"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/jinho/CLionProjects/BASIC/error.cpp">
 			<Option target="code"/>
 		</Unit>

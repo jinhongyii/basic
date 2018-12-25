@@ -79,15 +79,16 @@ void processLine(string line, Program &program, EvalState &state) {
     int lineno;
 
     Expression *exp = readE(scanner);
+    //has linenumber
     if (exp->getType() == CONSTANT) {
         int value = exp->eval(state);
         lineno = value;
-
         delete exp;
         if (!scanner.hasMoreTokens()) {
             program.removeSourceLine(lineno);
             return;
         }
+        //judge what kind of statement to add
         exp = readE(scanner);
         if (exp->toString() == "LET") {
             Expression *exp2 = readE(scanner);
@@ -175,7 +176,7 @@ void processLine(string line, Program &program, EvalState &state) {
         }
         delete exp;
         error("SYNTAX ERROR");
-    } else if (exp->getType() == IDENTIFIER) {
+    } else if (exp->getType() == IDENTIFIER) {//doesn't have linenumber
         if (exp->toString() == "RUN") {
             if (scanner.hasMoreTokens()) {
                 error("SYNTAX ERROR");

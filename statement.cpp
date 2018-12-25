@@ -80,7 +80,7 @@ statementtype inputstmt::gettype() {
 endstmt::endstmt() = default;
 
 void endstmt::execute(EvalState &state) {
-    endingflag = true;
+    //endingflag = true;
 }
 statementtype endstmt::gettype() {
     return ending;
